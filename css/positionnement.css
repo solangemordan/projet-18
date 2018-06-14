@@ -1,0 +1,606 @@
+/****************** PAGE CATALOGUE *********************************************************************************************/
+
+
+.containerHeaderSmall{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;	
+}
+
+hr{
+	margin:1rem 0 1rem 0;
+}
+
+/*********** VUE TABLETTE *******************************************************************/
+
+@media screen and (min-width: 640px) {
+
+	.containerHeaderMed{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-top: 20px;
+	}
+
+/*********** MENU PRINCIPALE *******************/
+
+	.container_menuP_med{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-left: -2rem;
+	}
+
+	.container_menuP_med > div:visited{
+		color: #A38A7C ;
+	}
+
+	.container_menuP_med > *{
+    	flex-grow: 0;
+    	flex-shrink: 0;
+    	flex-basis: calc(100% / 5 - 2rem);
+    	margin-left: 2rem;
+    	padding: 5px 15px 5px 15px;
+    	text-align: center;    	
+	}
+
+/*********** MENU SECONDAIRE *******************/
+
+	.container_MenuS_med2 > li:visited{
+		color: #A38A7C ;
+	}
+
+	.container_MenuS_med2{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;	
+	}
+
+	.itemSousMenu6{
+		flex: 1 1 calc(100% / 2);
+	}
+
+/*********** ARTICLES *******************/
+	
+	.containerArt_med{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.itemArt_med{
+		margin: 1rem;
+		flex: 1 1 calc(100% / 2 - 2rem);
+		position: relative;
+		overflow:  hidden;
+	}
+
+	.imgMed{
+		display: block;
+		width: /*150px*/ 52.083333333333%;
+		margin: 0 auto;
+
+	}
+	
+
+}
+
+/*********** VUE BUREAU *********************************************************************/
+
+
+@media screen and (min-width: 1280px) { 
+
+	main{
+		max-width: 1024px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+	}
+
+	/** HEADER *******************/
+
+	.containerHeaderMax{
+		max-width: 1024px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	/** formulaire ***************/
+
+	form p{
+		padding: 0px;
+	}
+	
+	/** MENU PRINCIPALE *********/
+
+	.containerMenuPMax{
+		max-width: 1024px;
+		display: flex;
+		margin: 0 auto;
+	}
+	.containerMenuPMax > div{
+		border-bottom: solid 1px #FFF;
+
+	}
+	.containerMenuPMax > div:hover{
+		border-bottom: solid 1px #552a20 ;
+
+	}
+	
+	.containerMenuPMax > a{
+		display: flex;
+		width: 150px;
+	}
+	
+	/** SOUS Menu **/
+	.containerMainMax{
+		display: flex;
+		flex-direction: row;
+
+	}
+
+	.sousMenu{
+		display: block;
+	}
+
+	.item_MenuS_max_3{
+		flex: 3;
+		
+	}
+
+	/** ARTICLES **/
+
+	.item_art_max_9{
+		flex: 9;
+
+	}
+
+	.containerArtMaxCat{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+
+	.itemArtMax{
+		
+		flex: 0 0 calc(100%  / 3 - 20px);/* 12 div 4 */
+		position: relative;
+		/*overflow:  hidden;*/
+	}
+
+	.pull{
+	margin-right: auto;
+	}
+
+	
+	/*************** position prix initiale ***************/
+
+	.itemArtMax > div{
+		position: absolute;
+		width: 200px;
+		bottom: 2px;
+		left: -300px;
+		transition: all 2s;
+		opacity: 0;
+	}
+	
+	/***** hover article ombre **************************/
+
+	.item_art_max_9 > article:hover{
+		box-shadow: 1px 1px 12px #555;
+	}
+
+	
+	/*************** hover prix ***************/
+
+	.item_art_max_9 > article:hover div{
+		left: 15px;
+		opacity: 1;
+	}
+
+	.imgMax{
+		display: block;
+		width: 200px;
+	}
+
+	.padMax{
+		padding-bottom: 30px;
+	}
+
+	.displMax{
+		display: block;
+		list-style: none ;
+	}
+
+	.displMax a{
+		border-bottom: 0px;
+		padding: 0px;
+		display: inline-block;
+	}
+
+	.filMax{
+		width: 1024px;
+		margin: 0 auto;
+	}
+
+}
+
+/****************** PAGE ARTICLE*********************************************************************************************/
+
+.containerChrSmall{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+}
+
+.containerArtSamll{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+}
+
+.containerBombaySmall{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	border: 0px;
+	width: 100%;
+}
+
+.itemChSmall{
+	text-align: center;
+}
+
+/********************* VUE TABLETTE *******************/
+
+
+@media screen and (min-width: 640px) {
+
+	.containerChMed{
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.itemCh1Med{
+		flex-basis: calc(100% / 3);
+		margin: 0;
+	}
+
+	.itemCh2Med{
+		flex-basis: calc(100% * 2 / 3);
+		/*text-align: center;*/
+	}
+
+	.prixMed{
+		width: 30%;
+	}
+	
+}
+
+
+/********************* VUE PC *******************/
+
+@media screen and (min-width: 1280px){ 
+
+
+	.containerArtMaxArt{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.containerChMax{
+		margin: 20px;
+		flex: calc(100% * 5 / 12 - 20px);
+		flex-direction: column;
+	}
+
+	.containerBombayMax{
+		margin: -80px 20px 0px 20px;
+		flex: calc(100% * 7 / 12 - 20px);
+		position: relative;
+	}
+
+	.prixMax{
+		margin-bottom: 15px;
+	}
+
+	.containerArtMaxArt > article > div{
+		width: 200px;
+	}
+
+
+
+}
+
+/********************************************** PAGE CONTACT ************************************************************************/
+
+#map{
+	width: 100%;
+	height: 300px;
+	background-color: grey;
+}
+
+.containerContactSmal{
+	display: flex;
+	flex-direction: column;
+}
+
+.infosContactSmal{
+	background-color: #e2f0f4;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.backColorBlue{
+	background-color: #AAD5DF;
+}
+.infoSmall{
+	text-align: center;
+	padding: 1rem;
+}
+
+.containerFormSmal{
+	display: flex;
+	flex-direction: column;	
+}
+
+.containerFormInfosSmall{
+	text-align: right;
+	margin-right: 2rem;
+}
+
+.formContactSmall{
+	width: 100%;
+}
+
+.inputSmal{
+	width: 75%;
+	margin-bottom: 15px;
+}
+
+.textAreaSmal{
+	width: 100%;
+	height:10em;
+	border: none;
+	
+}
+
+.boutonSmal{
+	width: 90%;
+	padding: 10px;
+	margin:0 5%; /* (100%-90%)/2*/
+	background-color: #FFF;
+	border: none;
+}
+
+/********************* VUE TABLETTE *******************/
+
+@media screen and (min-width: 640px) {
+
+	.containerContactMed{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.containerInfoContactMed{
+		margin:10px 10px 10px 0px;
+		flex: 1 1 calc(100% / 2 - 10px);
+	}
+
+	.containerContactnousMed{
+		margin:10px 0px 10px 10px;
+		flex: 1 1 calc(100% / 2 - 10px);
+	}
+
+	.containerFormInfosMed{
+		flex: 1 1 calc(100% / 2 );
+		
+	}
+
+	.containerFormEnvoiMed{
+		flex: 1 1 calc(100% / 2 );
+		margin: 25px;
+	}
+
+	.formContactMed{
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.infoMed{
+		height: 39.5rem;
+		text-align: left;
+	}
+
+	
+}
+
+/********************* VUE PC *******************/
+
+@media screen and (min-width: 1280px){ 
+
+	.containerInfoContactMax{
+		flex: 1 1 calc(100% / 3  - 10px);
+	}
+
+	.containerContactnousMax{
+		flex: 1 1 calc(100% * 2 / 3  - 10px);
+	}
+
+	.formContactMax{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: 24rem;
+	}
+
+	.containerFormInfoMax{
+		flex:1 1 calc(100% * 1 / 2 );
+		margin-right: 0;
+	}
+
+	.containerFormEnvoiMax{
+		flex: calc(100% * 1 / 2 - 2rem);
+		display: flex;
+		margin: 1rem;
+		height: 50px;
+	}
+
+	.textAreaMax{
+		margin: 0;
+		height: 22rem;
+	}
+
+	.containerNewLMax{
+		text-align: right;
+		flex-basis: calc(100% / 2);
+	}
+
+	.boutonMax{
+		width: 30%;
+	}
+
+	.infoMax{
+		height: 24rem;
+	}
+	
+}
+
+
+/********************************************** PAGE ACCUEIL ************************************************************************/
+
+.containerSlideSmall{
+	overflow: hidden;
+}
+
+.slide{
+	display: none;
+	margin-bottom: -40px;
+	margin-top: -180px;
+	width: 100%;
+	height: 10%;
+}
+
+.corner{
+	background-image: url("../images/home_page_corner.png");
+	background-repeat:no-repeat;
+	background-position: right;
+	height: 200px;
+	
+}
+.dimSmall{
+	text-align: center;
+}
+.datesSmall{
+	margin-left: 2rem;
+}
+
+.containerCollectSmall{
+	display: flex;
+	flex-direction: column;
+
+}
+.gazzda, .liam, .vita, .showroom, .shop{
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+/********************* VUE TABLETTE *******************/
+
+@media screen and (min-width: 640px) {
+
+	.flex{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.displNo{
+		display: none;
+	}
+	.SlideMed{
+		display: inline-block;
+		
+	}
+	.containerCollectMed{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.itemCellect3Med{
+		flex-basis: calc(100%);
+		
+	}
+	.itemCellect1Med{
+		flex: calc(100% / 3 - 2rem );
+		margin:1rem;
+	}
+	.itemDim1Med{
+		flex-basis: calc(100%);
+	}
+}
+
+/********************* VUE PC *******************/
+
+@media screen and (min-width: 1280px){ 
+
+	.containerCollectMax{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+
+	.itemCellect3Max{
+		padding: 0 1rem 0 1rem;
+	}
+
+	
+	.itemCollectMax{
+		
+		width: 0;
+		flex: 1 1 calc(100% * 3 / 4 );
+		margin:0rem;
+
+	}
+
+	.itemCellect1Max{
+		
+		
+		flex: 1 1 calc(100% / 4 - 1rem);
+		
+
+	}
+
+	.itemDim1Max{
+		/*display: none;*/
+		flex: 1 1 calc(100% / 4 );
+		margin: 0rem;
+	}
+
+	.shopMax{
+		padding: 1rem;
+	}
+
+	.cornerMax{
+		background-position-y: bottom;
+		height: 215px;
+	}
+
+	
+
+}
+
+
+
+

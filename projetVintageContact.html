@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Projet VINTAGE LAB contact</title>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/deco.css"/>
+        <link rel="stylesheet" type="text/css" href="css/positionnement.css"/>
+    </head>
+        
+   
+    <body>
+
+        <!-- HEADER **************************-->
+        <header class="containerHeaderSmall containerHeaderMed containerHeaderMax">
+            <div><a href="index.html"><img class="logo" src="images/logoVint.png" alt="logo"></a></div>
+            <div>
+                <form class="formRech formMax" method="post" action="recherche.php">
+                    <p> <input type="text" name="recherche" id="recherche" placeholder="Que cherchez-vous?"/> <label for="recherche" > ok </label> </p>
+                </form>
+            </div>
+            
+        </header>
+        <!-- FIN HEADER **************************-->
+
+        <hr/>
+
+        <!-- MENU PRINCIPAL **************************-->
+        
+
+            <nav class="dispNoSmal container_menuP_med containerMenuPMax" >
+                <div><a class="item_menuP_med" href="index.html">ACCUEIL</a></div>
+                <div><a class="item_menuP_med" href="">MEUBLES</a></div>
+                <div><a class="item_menuP_med" href="">LUMINAIRES</a></div>
+                <div><a class="item_menuP_med" href="">ACCESSOIRES</a></div>
+                <div><a class="item_menuP_med" href="projetVintageContact.html">CONTACTS</a></div>
+                
+            </nav>
+        <!-- MENU PRINCIPAL **************************-->
+
+
+
+
+        <!-- FILS D ARIANE **************************-->
+        
+        <div class="fil">
+           <nav class="filMax">
+                <span >VOUS ETES ICI : </span> 
+                <a href="projetVintageContact.html"> CONTACT </a>
+                
+            </nav>
+        </div>
+
+        <!-- FIN FILS D ARIANE **************************-->
+
+
+        
+            <main class="containerContactSmal">
+            <!-- CARTE **************************-->
+               <div id="map"></div>
+            
+                <script>
+                      function initMap() {
+                        var uluru = {lat: 50.643063, lng: 5.560469};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                          zoom: 15,
+                          center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                          position: uluru,
+                          map: map
+                        });
+                      }
+                </script>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqHVRhtNdV8oxPZLgKAPVNFtK_N9TLGKs&callback=initMap">
+                </script>
+            <!-- FIN CARTE **************************-->
+
+            <section class="containerContactMed">
+                <section class="containerInfoContactMed containerInfoContactMax">
+                    <div class="infosContactSmal"><h1>Info contact! </h1></div>
+                    <div class="backColorBlue infoSmall infoMax infoMed size12"><strong>Adresse: </strong><br/> 33 Rue Saint-Laurent 4000 Liège <br/><strong> Email: </strong><br/> vintage@lab.com <br/> <strong>Tel: </strong><br/> +32 4223 11 31 <br/> <strong>Site:</strong> <br/> www.vlab.com</div>
+                </section>
+                <section class="containerContactnousMed containerContactnousMax">
+                    <div class="infosContactSmal"><h1>Contactez-nous! </h1></div>
+                    <div class="backColorBlue containerFormSmal">
+                        <form class="formContactSmall formContactMed formContactMax" method="post" action="recherche.php">
+
+                            <p class="containerFormInfosSmall containerFormInfosMed containerFormInfoMax "> 
+                                <label for="nom" > Nom: </label> 
+                                <input class="inputSmal" type="text" name="nom" id="nom" placeholder="Nom"/> 
+                                <br/>
+                                <label for="prenom" > Prénom: </label> 
+                                <input class="inputSmal" type="text" name="Prénom" id="prenom" placeholder="Prénom"/> 
+                                <br/>
+                                <label for="mail" > E-mail: </label> 
+                                <input class="inputSmal" type="text" name="mail" id="mail" placeholder="E-mail"/>
+                                <br/>
+
+                            </p>
+                            <p class="containerFormEnvoiMed containerFormEnvoiMax">  
+                                <textarea class="textAreaSmal textAreaMax" name="ameliorer" id="ameliorer" placeholder="Un commentaire? "></textarea> 
+                            </p>
+                            <div class="containerNewLMax">
+                                <p><INPUT type="checkbox" name="newletter" value="newletter"> Je désire recevoir la Newletter</p>
+                                <p><button class="boutonSmal boutonMax">ENVOYER</button></p>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </section>
+            </main>
+            
+                
+            
+       
+
+            
+           
+    </body>
+</html>

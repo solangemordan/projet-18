@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+/**********************************/
+
+
+/********************************/
+html {
+    font-size: 62.5%;
+}
+
+body{
+    
+    font-family: 'Open sans', sans-serif;
+    margin: 0px;
+}
+
+.logo{
+	width: 335px/*110%*/;
+
+	
+}
+
+a{
+	text-decoration:none;
+	font-size: 1.2rem; 
+}
+
+.size12{
+	font-size: 1.2rem;
+}
+
+.container_header_smal{
+	padding-bottom: 20px;
+}
+
+hr{
+	color:  #BDBDBD;
+	margin:/*15px*/4.477611940299% 0 4.477611940299% 0;
+}
+.dispNoSmal{
+	display: none;
+}
+
+.fil{
+	background-color: #AAD5DF;
+	height: 40px;
+	margin-top: 20px;
+	color: #FFF;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	
+}
+.fil a{
+	color: #A38A7C ;
+}
+.sousMenu{
+	width:/*300px*/85.714285714286%;
+    list-style: none ;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+.sousMenu a{
+	margin: /*5px*/1.428571428571%;
+    border-bottom: 1px solid  #AAD5DF;
+    background-color:#FFF;
+    color: #000;
+    display: block;
+    padding : 10px;
+    text-decoration: none;
+}
+
+.sousMenu a:hover{	
+    background-color:#AAD5DF;
+}
+
+/*** *********************FORMULAIRE ****************/
+label{ 
+ 	padding: 5px 15px 6px 15px;
+	background-color: #AAD5DF;
+	color: #FFF;
+	margin-left: -3px;
+}
+
+input{
+	padding: 4px;
+}
+/*** ********************* fin FORMULAIRE ****************/
+
+
+h2{
+	color: #AAD5DF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.7rem;
+	margin: 5px auto 5px 0px;
+}
+
+p{
+	font-size: 1.2rem;
+}
+
+a img { 
+	border: none;
+}
+
+article{
+	border: 1px solid  #BDBDBD;
+	margin: 10px 0 10px 0;
+	padding: 5px;
+}
+
+.prixSmal{
+	background-color: #AAD5DF;
+	color: #FFF;
+	text-align: right;
+	padding:2px;
+	margin-bottom: 15px;
+	
+}
+
+/****************** PAGE ARTICLE**************************************************/
+
+.chSmal1{
+	width: /*300px*/ 75%;
+}
+.chSmal2{
+	width: /*80px*/ 20%;
+}
+h1{
+	font-size: 2.5rem;
+	font-weight: lighter;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
